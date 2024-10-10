@@ -3,7 +3,7 @@
 ## Versions of Tools in use
 - **JDK**: `17`
 - **Spring Boot**: `3.3.4`
-- **Spring Cloud**: `Edgware RELEASE`
+- **Spring Cloud**: `2023.0.3`
 
 ## Tasks
 - [x] Add Simple Provider - User
