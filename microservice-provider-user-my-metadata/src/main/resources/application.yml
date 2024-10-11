@@ -1,0 +1,35 @@
+server:
+  port: 8000
+spring:
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1
+    driverClassName: org.h2.Driver
+  application:
+    name: microservice-provider-user
+logging:
+  level:
+    root: INFO
+    org:
+      hibernate: INFO
+      '[hibernate.type]':
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+              BasicExtractor: TRACE
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:password123@localhost:8761/eureka/
+      # defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    metadata-map:
+      my-metadata: This is my metadata of user
+# management:
+#   security:
+#     enabled: false
