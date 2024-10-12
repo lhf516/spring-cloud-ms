@@ -19,4 +19,6 @@
     - `cat ./rest-api-test.xml | curl -v -X POST -H "Content-type: application/xml" -d @- http://localhost:8761/eureka/apps/rest-api-test`
   - [x] Unregister
     - `curl -v -X DELETE http://localhost:8761/eureka/apps/rest-api-test/itmuch:rest-api-test:9000`
+- [x] Enable healthcheck to Eureka Server
+- [x] Add sample of remove Jersey
 - [ ] 
