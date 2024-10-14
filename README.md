@@ -21,4 +21,5 @@
     - `curl -v -X DELETE http://localhost:8761/eureka/apps/rest-api-test/itmuch:rest-api-test:9000`
 - [x] Enable healthcheck to Eureka Server
 - [x] Add sample of remove Jersey
+- [x] Add ribbon to movie
 - [ ] 
